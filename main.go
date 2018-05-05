@@ -274,15 +274,12 @@ func configureServerCommand(app *kingpin.Application) error {
 
 	cmd := app.Command("server", "Run the proxy (and web) server")
 	cmd.Flag("port", "The port to listen on").
-		Default(s.Port).
 		StringVar(&s.Port)
 
 	cmd.Flag("bind", "The address to bind to").
-		Default(s.Bind).
 		StringVar(&s.Bind)
 
 	cmd.Flag("prefix", "A path prefix for the server").
-		Default("/").
 		StringVar(&s.PathPrefix)
 
 	cmd.Flag("passphrase", "Require a passphrase to view web interface").

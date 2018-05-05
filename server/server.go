@@ -40,10 +40,6 @@ func New(conf config.Config, version string) (*Server, error) {
 		return nil, err
 	}
 
-	if envPort := os.Getenv("PORT"); envPort != "" {
-		port = envPort
-	}
-
 	if version == "" {
 		version = "dev"
 	}
