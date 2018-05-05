@@ -178,6 +178,7 @@ Cardigann simply provides a format for describing how to log into and scrape the
 * Transmithe.Net
 * Tspate
 * YggTorrent
+* Metal-tracker.com
 
 ### Dead
 * AlphaReign
